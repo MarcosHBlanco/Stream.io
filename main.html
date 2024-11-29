@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Stream.io</title>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous"
+		/>
+		<script src="script.js" defer></script>
+	</head>
+	<body
+		style="
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			background-color: rgba(26, 32, 44, 1);
+		"
+	>
+		<div
+			style="width: 100%"
+			class="position-relative d-flex justify-content-center align-items-center my-0"
+		>
+			<nav
+				style="
+					height: 15%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+				"
+				class="navbar position-absolute align-self-center navbar-expand-lg custom-color-midnightblue-bg"
+			>
+				<div class="container-fluid position-relative">
+					<a class="navbar-brand custom-color-richyellow-text" href="#"
+						><h2 class="font-weight-bold">Stream.io</h2></a
+					>
+					<button
+						class="navbar-toggler position-absolute custom-color-blue-bg top-0 end-0"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div
+						class="collapse navbar-collapse align-middle custom-bg custom-color-slategray-bg"
+						id="navbarSupportedContent"
+					>
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a
+									class="nav-link active custom-color-blue-text"
+									aria-current="page"
+									href="#"
+									><h5
+										class="mt-4 p-1 font-weight-bold custom-color-richyellow-text"
+									>
+										Home
+									</h5>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a
+									class="nav-link custom-color-blue-text font-weight-bold"
+									href="#"
+									><h5
+										class="mt-4 p-1 font-weight-bold custom-color-richyellow-text"
+									>
+										Watchlist
+									</h5></a
+								>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle custom-color-blue-text font-weight-bold custom-color-richyellow-text"
+									href="#"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+									><h5
+										class="mt-4 p-1 font-weight-bold custom-color-richyellow-text"
+									>
+										Categories
+									</h5>
+								</a>
+								<ul class="dropdown-menu">
+									<div class="container">
+										<div class="row">
+											<!-- Column 1 -->
+											<div class="col">
+												<li>
+													<a
+														class="dropdown-item custom-color-blue-text"
+														href="#"
+														>Action & Adventure</a
+													>
+												</li>
+												<li>
+													<a
+														class="dropdown-item custom-color-blue-text"
+														href="#"
+														>Comedy</a
+													>
+												</li>
+												<li>
+													<a
+														class="dropdown-item custom-color-blue-text"
+														href="#"
+														>Anime</a
+													>
+												</li>
+											</div>
+
+											<!-- Column 2 -->
+											<div class="col">
+												<li>
+													<a
+														class="dropdown-item custom-color-blue-text"
+														href="#"
+														>Documentary</a
+													>
+												</li>
+												<li>
+													<a
+														class="dropdown-item custom-color-blue-text"
+														href="#"
+														>Drama</a
+													>
+												</li>
+												<li>
+													<a
+														class="dropdown-item custom-color-blue-text"
+														href="#"
+														>Fantasy</a
+													>
+												</li>
+											</div>
+
+											<!-- Column 3 -->
+											<div class="col">
+												<li>
+													<a
+														class="dropdown-item custom-color-blue-text"
+														href="#"
+														>Thriller</a
+													>
+												</li>
+												<li>
+													<a
+														class="dropdown-item custom-color-blue-text"
+														href="#"
+														>Romance</a
+													>
+												</li>
+												<li>
+													<a
+														class="dropdown-item custom-color-blue-text"
+														href="#"
+														>Science Fiction</a
+													>
+												</li>
+											</div>
+										</div>
+									</div>
+								</ul>
+							</li>
+						</ul>
+						<form class="d-flex" role="search">
+							<input
+								class="form-control me-2"
+								type="search"
+								placeholder="Search"
+								aria-label="Search"
+							/>
+							<button class="btn btn-primary" type="submit">Search</button>
+						</form>
+					</div>
+				</div>
+			</nav>
+			<div id="carouselExampleIndicators" class="carousel slide w-100 h-100">
+				<div class="carousel-indicators">
+					<button
+						type="button"
+						data-bs-target="#carouselExampleIndicators"
+						data-bs-slide-to="0"
+						class="active"
+						aria-current="true"
+						aria-label="Slide 1"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#carouselExampleIndicators"
+						data-bs-slide-to="1"
+						aria-label="Slide 2"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#carouselExampleIndicators"
+						data-bs-slide-to="2"
+						aria-label="Slide 3"
+					></button>
+				</div>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<button
+							type="button"
+							class="btn sm-w-25 sm-h-25 custom-color-midnightblue-bg text-light position-absolute bottom-0 mb-5 mx-5 z-3 h1"
+							tabindex="10"
+							data-bs-toggle="modal"
+							data-bs-target="#exampleModal1"
+						>
+							Sinopsys
+						</button>
+						<div
+							class="modal fade"
+							id="exampleModal1"
+							tabindex="-1"
+							aria-labelledby="exampleModalLabel"
+							aria-hidden="true"
+						>
+							<div class="modal-dialog custom-color-midnightblue-bg">
+								<div
+									class="modal-content custom-color-midnightblue-bg text-light"
+								>
+									<div class="modal-header">
+										<h1 class="modal-title h1" id="exampleModalLabel">
+											Eclipse: Rise of the Vanguard
+										</h1>
+										<button
+											type="button"
+											class="btn-close bg-light"
+											data-bs-dismiss="modal"
+											aria-label="Close"
+										></button>
+									</div>
+									<div class="modal-body">
+										In the distant future, humanity's last great city, Aurora
+										Prime, stands as a beacon of hope on a fractured Earth. But
+										peace shatters when an ancient alien race awakens, led by
+										colossal biomechanical warlords. As cities fall and skies
+										burn, the Vanguard, an elite team of operatives with
+										cutting-edge technology and cybernetic enhancements, steps
+										up to defend humanity. Armed with advanced weaponry and
+										aided by mysterious alien allies, the Vanguard must uncover
+										the secret of the alien invaders and activate the ancient
+										planetary defense system known as Eclipse. With time running
+										out, the team faces impossible odds, epic battles, and a
+										fight for the very survival of Earth.
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-primary">Go to</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<img
+							src="./images/eclipse.webp"
+							class="d-block w-100 h-100"
+							alt="..."
+						/>
+					</div>
+					<div class="carousel-item">
+						<button
+							type="button"
+							class="btn sm-w-25 sm-h-25 custom-color-midnightblue-bg text-light position-absolute bottom-0 mb-5 mx-5 z-3 h1"
+							tabindex="10"
+							data-bs-toggle="modal"
+							data-bs-target="#exampleModal2"
+						>
+							Sinopsys
+						</button>
+						<div
+							class="modal fade"
+							id="exampleModal2"
+							tabindex="-1"
+							aria-labelledby="exampleModalLabel"
+							aria-hidden="true"
+						>
+							<div class="modal-dialog custom-color-midnightblue-bg">
+								<div
+									class="modal-content custom-color-midnightblue-bg text-light"
+								>
+									<div class="modal-header">
+										<h1 class="modal-title h1" id="exampleModalLabel">
+											Galactics
+										</h1>
+										<button
+											type="button"
+											class="btn-close bg-light"
+											data-bs-dismiss="modal"
+											aria-label="Close"
+										></button>
+									</div>
+									<div class="modal-body">
+										In a universe on the brink of collapse, an unlikely crew of
+										diverse and heroic adventurers bands together to save their
+										galaxy. Featuring a fearless leader, a tech-savvy alien, a
+										cunning sharpshooter, and a reprogrammed battle droid, the
+										team ventures into uncharted worlds teeming with danger,
+										wonder, and humor.
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-primary">Go to</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<img
+							src="./images/galactics.webp"
+							class="d-block w-100 h-100"
+							alt="..."
+						/>
+					</div>
+					<div class="carousel-item">
+						<button
+							type="button"
+							class="btn sm-w-25 sm-h-25 custom-color-midnightblue-bg text-light position-absolute bottom-0 mb-5 mx-5 z-3 h1"
+							tabindex="10"
+							data-bs-toggle="modal"
+							data-bs-target="#exampleModal3"
+						>
+							Sinopsys
+						</button>
+						<div
+							class="modal fade"
+							id="exampleModal3"
+							tabindex="-1"
+							aria-labelledby="exampleModalLabel"
+							aria-hidden="true"
+						>
+							<div class="modal-dialog custom-color-midnightblue-bg">
+								<div
+									class="modal-content custom-color-midnightblue-bg text-light"
+								>
+									<div class="modal-header">
+										<h1 class="modal-title h1" id="exampleModalLabel">
+											Dimensions Unleashed
+										</h1>
+										<button
+											type="button"
+											class="btn-close bg-light"
+											data-bs-dismiss="modal"
+											aria-label="Close"
+										></button>
+									</div>
+									<div class="modal-body">
+										When a quirky yet brilliant scientist, Professor Quirk,
+										accidentally activates his prototype "Dimension Shifter," he
+										drags his unsuspecting intern, Milo, into a wild journey
+										across bizarre and chaotic universes. From battling sentient
+										UFOs to befriending alien outcasts, the duo must navigate
+										strange new worlds to repair the device and find their way
+										home. With each dimension more unpredictable than the last,
+										their bond is tested as they uncover a looming threat that
+										could collapse all realities. Can Professor Quirk's
+										eccentric inventions and Milo's unexpected resourcefulness
+										save the multiverse in time?
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-primary">Go to</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<img
+							src="./images/dimensions-unleashed.webp"
+							class="d-block w-100 h-100"
+							alt="..."
+						/>
+					</div>
+				</div>
+				<button
+					class="carousel-control-prev"
+					type="button"
+					data-bs-target="#carouselExampleIndicators"
+					data-bs-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button
+					class="carousel-control-next"
+					type="button"
+					data-bs-target="#carouselExampleIndicators"
+					data-bs-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</div>
+		<div id="main-car-container" class="m-2 p-0">
+			<h2 class="custom-color-richyellow-text">Movies</h2>
+			<div id="carrousel2">
+				<div class="carrousel-item2 position-relative" id="item1">
+					<button
+						class="btn custom-color-midnightblue-bg custom-color-richyellow-text position-absolute bottom-0 mb-3 mx-3"
+					>
+						+
+					</button>
+					<div
+						class="carrousel-content text-light position-absolute bottom-0"
+					></div>
+				</div>
+				<div class="carrousel-item2 position-relative" id="item2">
+					<button
+						class="btn custom-color-midnightblue-bg custom-color-richyellow-text position-absolute bottom-0 mb-3 mx-3"
+					>
+						+
+					</button>
+					<div
+						class="carrousel-content text-light position-absolute bottom-0"
+					></div>
+				</div>
+				<div class="carrousel-item2 position-relative" id="item3">
+					<button
+						class="btn custom-color-midnightblue-bg custom-color-richyellow-text position-absolute bottom-0 mb-3 mx-3"
+					>
+						+
+					</button>
+					<div
+						class="carrousel-content text-light position-absolute bottom-0"
+					></div>
+				</div>
+				<div class="carrousel-item2 position-relative" id="item4">
+					<button
+						class="btn custom-color-midnightblue-bg custom-color-richyellow-text position-absolute bottom-0 mb-3 mx-3"
+					>
+						+
+					</button>
+					<div
+						class="carrousel-content text-light position-absolute bottom-0"
+					></div>
+				</div>
+				<div class="carrousel-item2 position-relative" id="item5">
+					<button
+						class="btn custom-color-midnightblue-bg custom-color-richyellow-text position-absolute bottom-0 mb-3 mx-3"
+					>
+						+
+					</button>
+					<div
+						class="carrousel-content text-light position-absolute bottom-0"
+					></div>
+				</div>
+				<div class="carrousel-item2 position-relative" id="item6">
+					<button
+						class="btn custom-color-midnightblue-bg custom-color-richyellow-text position-absolute bottom-0 mb-3 mx-3"
+					>
+						+
+					</button>
+					<div
+						class="carrousel-content text-light position-absolute bottom-0"
+					></div>
+				</div>
+				<div class="carrousel-item2 position-relative" id="item7">
+					<button
+						class="btn custom-color-midnightblue-bg custom-color-richyellow-text position-absolute bottom-0 mb-3 mx-3"
+					>
+						+
+					</button>
+					<div
+						class="carrousel-content text-light position-absolute bottom-0"
+					></div>
+				</div>
+				<div class="carrousel-item2 position-relative" id="item8">
+					<button
+						class="btn custom-color-midnightblue-bg custom-color-richyellow-text position-absolute bottom-0 mb-3 mx-3"
+					>
+						+
+					</button>
+					<div
+						class="carrousel-content text-light position-absolute bottom-0 position-relative"
+					></div>
+				</div>
+			</div>
+			<button onclick="changeActivePrev()" id="prev"><</button>
+			<button onclick="changeActiveNext()" id="next">></button>
+		</div>
+		<div id="animes-container" class="m-2 p-0">
+			<h2 class="custom-color-richyellow-text">Animes</h2>
+		</div>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
