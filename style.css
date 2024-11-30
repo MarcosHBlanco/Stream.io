@@ -52,7 +52,8 @@
 	margin-top: 30px;
 	margin-bottom: 0px;
 }
-#carrousel2 {
+#carrousel2,
+#carousel3 {
 	position: relative;
 	display: flex;
 	overflow-x: scroll;
@@ -68,7 +69,6 @@
 }
 
 .carrousel-item2 {
-	background-color: rgb(155, 181, 125);
 	width: 15%;
 	height: 80%;
 	margin: 0 10px;
@@ -159,6 +159,83 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top;
+}
+
+.carousel-item3 {
+	width: 40%;
+	height: 80%;
+	margin: 0 10px;
+	border-radius: 6px;
+	opacity: 0.5;
+	transition: all 0.3s ease;
+	flex-shrink: 0;
+}
+.carousel-item3:hover {
+	background-position: top;
+	background-size: contain;
+	width: 50%;
+	height: 100%;
+}
+#item9 {
+	background-image: url("./images/series-ideas/ashes-of-tomorrow.webp");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+#item10 {
+	background-image: url("./images/series-ideas/ashes-of-tomorrow.webp");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+#item11 {
+	background-image: url("./images/series-ideas/ashes-of-tomorrow.webp");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+#item12 {
+	background-image: url("./images/series-ideas/ashes-of-tomorrow.webp");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+#item13 {
+	background-image: url("./images/series-ideas/ashes-of-tomorrow.webp");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+#item14 {
+	background-image: url("./images/series-ideas/ashes-of-tomorrow.webp");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+#item15 {
+	background-image: url("./images/series-ideas/ashes-of-tomorrow.webp");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+#item16 {
+	background-image: url("./images/series-ideas/ashes-of-tomorrow.webp");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.hidden-div {
+	display: none;
+	position: absolute;
+	border: 2px solid black;
+	border-radius: 5px;
+	background-color: black;
+	bottom: 0;
+	height: 50%;
+	width: 100%;
+}
+.hidden-div.visible {
+	display: block;
 }
 
 @media (width >= 900px) {

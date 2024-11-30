@@ -34,3 +34,20 @@ function ensureVisible(index) {
 
 // Initialize the active item
 window.onload = setActive;
+
+const carouselAnimeItems = document.querySelectorAll(".carousel-item3");
+
+carouselAnimeItems.forEach((anime) => {
+	anime.addEventListener("mouseover", () => {
+		const hiddenDiv = anime.querySelector(".hidden-div");
+		if (hiddenDiv) {
+			hiddenDiv.classList.add("visible");
+		}
+	});
+	anime.addEventListener("mouseout", () => {
+		const hiddenDiv = anime.querySelector(".hidden-div");
+		if (hiddenDiv) {
+			hiddenDiv.classList.remove("visible");
+		}
+	});
+});
