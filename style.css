@@ -313,4 +313,87 @@
 		background-size: cover;
 		background-position: center;
 	}
+	.carousel-item3 {
+		width: 14%;
+		height: 80%;
+		margin: 0 10px;
+		border-radius: 6px;
+		opacity: 1;
+		transition: all 0.3s ease;
+		flex-shrink: 0;
+	}
+	.carousel-item3:hover {
+		background-position: top;
+		background-size: contain;
+		width: 35%;
+		height: 100%;
+	}
+	.anime-description {
+		color: white;
+		margin: 5px;
+		text-align: start;
+	}
+
+	#item9 {
+		background-image: url("./images/animes-ideas/blade-horizon.webp");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	#item10 {
+		background-image: url("./images/animes-ideas/phoenix-blade.webp");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	#item11 {
+		background-image: url("./images/animes-ideas/pancake-chronicles.webp");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	#item12 {
+		background-image: url("./images/animes-ideas/celestial-realms.webp");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	#item13 {
+		background-image: url("./images/animes-ideas/blades-of-destiny.webp");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	#item14 {
+		background-image: url("./images/animes-ideas/whispering-shadows.webp");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	#item15 {
+		background-image: url("./images/animes-ideas/eclipse-of-the-abyss.webp");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	#item16 {
+		background-image: url("./images/animes-ideas/the-misadventures-of-captain-chaos.webp");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	.hidden-div {
+		opacity: 0;
+		position: absolute;
+		border: 2px solid black;
+		border-radius: 5px;
+		background-color: black;
+		bottom: 0;
+		height: 50%;
+		width: 100%;
+		transition: opacity 0.3s ease;
+	}
+	.hidden-div.visible {
+		opacity: 1;
+	}
 }
