@@ -35,8 +35,8 @@ function ensureVisible(index) {
 // Initialize the active item
 window.onload = setActive;
 
+//Third carousel handling
 const carouselAnimeItems = document.querySelectorAll(".carousel-item3");
-
 carouselAnimeItems.forEach((anime) => {
 	anime.addEventListener("mouseover", () => {
 		const hiddenDiv = anime.querySelector(".hidden-div");
