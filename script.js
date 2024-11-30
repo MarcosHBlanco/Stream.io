@@ -43,6 +43,11 @@ carouselAnimeItems.forEach((anime) => {
 		if (hiddenDiv) {
 			hiddenDiv.classList.add("visible");
 		}
+		anime.scrollIntoView({
+			behavior: "smooth",
+			block: "nearest",
+			inline: "nearest",
+		});
 	});
 	anime.addEventListener("mouseout", () => {
 		const hiddenDiv = anime.querySelector(".hidden-div");
